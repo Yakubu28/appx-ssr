@@ -1,0 +1,26 @@
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: scroll 16s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.custom-cursor {
+    cursor: url('../assets/icons/cursor-icon.png') 16 16, auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.custom-cursor:hover {
+    transform: scale(1.05); /* Add a scaling effect on hover */
+}
